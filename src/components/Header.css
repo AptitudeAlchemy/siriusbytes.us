@@ -2,9 +2,9 @@ header {
     height:7.5rem;
 }
 header .brand-logo .brand-icon {
-    max-width:60px;
-    max-height:80px;
+    max-width:5rem;
+    max-height:6rem;
 } 
 header .brand-logo .brand-tagline {
-    max-width:148px;
+    max-width:10rem;
 }
