@@ -1,0 +1,10 @@
+header {
+    height:7.5rem;
+}
+header .brand-logo .brand-icon {
+    max-width:60px;
+    max-height:80px;
+} 
+header .brand-logo .brand-tagline {
+    max-width:148px;
+}

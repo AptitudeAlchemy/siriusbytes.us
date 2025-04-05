@@ -1,42 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    font-family: "BrunoAceScRegular";
+    margin:0;padding:0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+a {
+    color:var(--brand-primary);
+    text-decoration: none;
+    transition: all 250ms linear;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+a:hover {
+    transition: all 250ms linear;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.btn-grad {background-image: linear-gradient(to right, var(--brand-primary) 0%, var(--brand-secondary)  55%, var(--brand-tertiary)  100%)}
+.btn-grad {
+    border:2px solid var(--brand-primary);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 8px;
+    /* display: block; */
+    outline:none;
 }
 
-.card {
-  padding: 2em;
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
 
-.read-the-docs {
-  color: #888;
-}

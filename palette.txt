@@ -1,0 +1,9 @@
+- XML
+
+<palette>
+  <color name="Picton Blue" hex="2BACE2" r="43" g="172" b="226" />
+  <color name="White" hex="FEFEFE" r="254" g="254" b="254" />
+  <color name="Black" hex="000000" r="0" g="0" b="0" />
+  <color name="UCLA Blue" hex="2E76BC" r="46" g="118" b="188" />
+  <color name="Steel blue" hex="3582C2" r="53" g="130" b="194" />
+</palette>
