@@ -37,6 +37,11 @@
   }
 }
 
+body {
+  width:100vw;
+  overflow-x:hidden;
+}
+
 @font-face {
   font-family: "BrunoAceSCRegular";
   src: local("BrunoAceSCRegular"), url('./fonts/BrunoAceSCRegular.ttf'), format("opentype");
