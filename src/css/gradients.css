@@ -1,0 +1,51 @@
+.particle-grad {
+    z-index:-1000;
+    position: fixed;
+    top:0%;
+    border-radius: 50%;
+    background:linear-gradient(-260deg, var(--brand-primary) 20%, var(--brand-secondary) 100%);
+    filter:blur(50px);
+    animation-name:animate_rotate;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.particle-grad-sm-l {
+    left:20rem;
+    width:15rem;
+    height:15rem;
+}
+.particle-grad-sm-r {
+    right:12rem;
+    width:15rem;
+    height:15rem;
+}
+
+.particle-grad-rg-r {
+    right:-25rem;
+    width:40rem;
+    height:40rem;
+}
+.particle-grad-rg-l {
+    top:5%;
+    left:calc(40rem / 10);
+    width:40rem;
+    height:40rem;
+}
+
+.particle-follower {
+
+    width:4rem;
+    height:4rem;
+    filter: blur(5px) !important;
+}
+
+@keyframes animate_rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform:rotateZ(360deg)
+    }
+}

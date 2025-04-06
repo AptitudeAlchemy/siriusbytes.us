@@ -1,36 +1,51 @@
-import './Header.css';
-import brandIcon from '../assets/siribytes.png';
-// import brandTagLine from '../assets/brand-with-tagline.png';
+import React from "react";
+import brandLogo from "/favicon.png";
+import brandTagline from "../assets/brand-with-tagline-x.png";
+
+import "../css/Header.css";
+import DropHeaderSection from "./DropHeaderSection";
 
 function Header() {
+  const navLinks = [
+    { _id: 0, title: "our services", route: "our-services" },
+    { _id: 1, title: "projects", route: "projects" },
+    { _id: 2, title: "contact me", route: "contact-me" },
+    { _id: 4, title: "terms & conditions", route: "terms-and-conditions" },
+  ];
 
-    const navLinks = [
-        {_id:0, title:'our service', route:'our-services'},
-        {_id:1, title:'contact us', route:'contact-us'},
-        {_id:2, title:'download', route:'download'},
-        {_id:3, title:'faqs', route:'faqs'},    
-    ]
+  return (
+    <>
+      <header className="Header container-fluid px-0 mx-0 w-100 h-100 py-3 d-flex justify-content-start align-items-start">
+        <div className="container d-flex justify-content-between align-items-center">
+          <div className="d-flex justify-content-start align-items-center">
+            {/* <img src={brandLogo} alt="" className="img-fluid brand-logo" /> */}
+            <img
+              src={brandTagline}
+              alt=""
+              className="brand-name img-fluid mx-2 brand-tagline"
+            />
+          </div>
+          <nav className="d-flex justify-content-center align-items-center bg-transparent">
+            {navLinks.map((link) => (
+              <a
+                key={link._id}
+                href={`#${link.route}`}
+                className="mx-2 text-secondary"
+              >
+                {link.title}
+              </a>
+            ))}
+          </nav>
 
-    return <>
-        <header
-            className="container px-0 bg-transparent d-flex justify-content-between align-items-center">
-            <div className="brand-logo d-flex justify-content-start align-items-center">
-                {/* <img src={brandIcon} alt="" className="brand-icon img-fluid w-100 h-100" /> */}
-                <img src={brandIcon} alt="" className="brand-tagline img-fluid w-100 h-100 mx-3"/>
-            </div>
-
-            <nav className='nav-links d-flex justify-content-center align-items-center'>
-                {/* <a href="#" className="h6 fw-bold text-capitalize mx-2">Our services</a> */}
-                {
-                    navLinks.map(link => (
-                        <a key={link._id} href={`#${link.route}`} className="h6 fw-bold text-capitalize mx-4">{link.title}</a>
-                    ))
-                }
-                <button className='btn-grad text-light py-2 px-2 ms-2'><a href="#" className="text-light fw-bold text-uppercase px-4">Join</a></button>
-            </nav>
-
-        </header>
+          {/* <button className="btn-grad">Get started</button> */}
+          <button className="btn text-dark">
+            <i className="fas fa-search"></i>
+          </button>
+        </div>
+      </header>
+      {/* <DropHeaderSection></DropHeaderSection> */}
     </>
+  );
 }
 
 export default Header;

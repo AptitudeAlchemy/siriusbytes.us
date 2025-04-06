@@ -5,22 +5,32 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  scroll-behavior: smooth;
+
+  /* box-sizing: border-box; */
+  z-index:1;
+
   /* Theming */
-  --brand-primary:#2BACE2;
-  --brand-secondary:#2E76BC;
+  /* --brand-primary:#2BACE2; */
+  --brand-primary:#0b1bcca1;
+  /* --brand-secondary:#2E76BC; */
+  --brand-secondary:#8f04cb;
   --brand-tertiary:#3582C2;
 
   --primary-shade:#87dbff;
 
   --text-color:#000000;
+  --btn-text:white;
   --bg-color:#FFFFFF;
+  --white-glass:rgba(255, 255, 255, 0.200);
+
+  --on-link:var(--brand-secondary);
 
 }
 
@@ -38,6 +48,7 @@
 }
 
 body {
+  position: relative;
   width:100vw;
   overflow-x:hidden;
 }

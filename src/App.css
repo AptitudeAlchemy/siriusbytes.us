@@ -1,3 +1,5 @@
+@import './css/gradients.css';
+
 * {
     font-family: "BrunoAceScRegular";
     margin:0;padding:0;
@@ -9,25 +11,13 @@ a {
     transition: all 250ms linear;
 }
 a:hover {
-    color:#9f9f9f;
+    color:#0f0f0f;
     transition: all 250ms linear;
 }
-.btn-grad {background-image: linear-gradient(to right, var(--brand-primary) 0%, var(--brand-secondary)  55%, var(--brand-tertiary)  100%)}
-.btn-grad {
-    border:2px solid var(--brand-primary);
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    border-radius: 8px;
-    /* display: block; */
-    outline:none;
+.h-min {
+    min-height:75vh;
 }
-
-.btn-grad:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
+.container-fluid {
+    margin:0;
+    padding:0;
 }
-
