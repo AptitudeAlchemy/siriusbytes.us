@@ -1,0 +1,26 @@
+.SideMenu {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:80%;
+    background:rgba(255, 255, 255, 0.766);
+    height:100vh;
+    overflow: hidden;
+    transition: 500ms all;
+    animation-name:animate-side-menu;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes animate-side-menu {
+    from {
+        opacity: 0;
+        width:0%;
+    }
+    to {
+        opacity: 1;
+        width:80%;
+    }
+}

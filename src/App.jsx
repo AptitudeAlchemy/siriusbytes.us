@@ -5,7 +5,6 @@ function App() {
   return (
     <div>
       <HomePage />
-      <section style={{ minHeight: "380vh" }}></section>
     </div>
   );
 }

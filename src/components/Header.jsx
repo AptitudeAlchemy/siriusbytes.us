@@ -30,7 +30,7 @@ function Header() {
               <a
                 key={link._id}
                 href={`#${link.route}`}
-                className="mx-2 text-secondary"
+                className="mx-4 text-secondary"
               >
                 {link.title}
               </a>
