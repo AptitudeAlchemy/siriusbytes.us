@@ -1,6 +1,7 @@
 import React from "react";
+import SearchLinks from "./SearchLinks";
 
-function TopSearchBar({ searchLinks }) {
+function TopSearchBar() {
   return (
     <>
       <button className="search-btn btn text-dark" onClick={showSearch}>
@@ -8,30 +9,12 @@ function TopSearchBar({ searchLinks }) {
       </button>
       <div
         id="top-search-bar"
-        className="search-bar container-fluid py-5 d-none d-flex justify-content-center align-items-center"
+        className="search-bar container-fluid py-5 d-none d-flex justify-content-center align-items-center flex-column "
       >
-        <div className="px-5 container d-flex justify-content-center align-items-center flex-column">
-          <ul className="w-100">
-            {searchLinks.map((link) => (
-              <li
-                key={link._id}
-                className="py-2 border px-2 my-2 d-flex justify-content-between align-items-center"
-              >
-                <a href={`#${link.route}`} className="text-dark">
-                  {link.title}
-                </a>
-                <i className="fas fa-arrow-right"></i>
-              </li>
-            ))}
-          </ul>
-          <button
-            onClick={hideSearch}
-            className="btn border d-flex justify-content-center align-items-center"
-            style={{ float: "right" }}
-          >
-            <i className="fas fa-times"></i>
-          </button>
-        </div>
+        <SearchLinks hideSearch={hideSearch}></SearchLinks>
+        <button onClick={hideSearch} className="mt-4 btn border ">
+          <i className="fas fa-times"></i>
+        </button>
       </div>
     </>
   );

@@ -16,10 +16,11 @@ a:hover {
     color:#0f0f0f;
     transition: all 250ms linear;
 }
-.h-min {
-    min-height:75vh;
-}
 .container-fluid {
     margin:0;
     padding:0;
+}
+
+li {
+    list-style: none;
 }

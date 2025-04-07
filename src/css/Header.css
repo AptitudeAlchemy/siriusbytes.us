@@ -4,10 +4,6 @@
     background:var(--white-glass);
 }
 
-.brand-logo, .brand-tagline {
-    max-width:10rem;
-}
-
 button:hover {
     color:rgb(212, 212, 212) !important;
 }

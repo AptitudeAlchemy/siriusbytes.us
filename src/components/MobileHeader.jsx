@@ -1,5 +1,6 @@
 import React from "react";
 import brandLogo from "../assets/brand-with-tagline-x.png";
+import MobileLogo from "./MobileLogo";
 
 function MobileHeader() {
   const styles = {
@@ -15,12 +16,7 @@ function MobileHeader() {
     <>
       <header className="container-fluid" style={styles.header}>
         <div className="container p-4 px-4 d-flex justify-content-between align-items-center">
-          <img
-            src={brandLogo}
-            alt=""
-            className="brand-logo img-fluid"
-            width={128}
-          />
+          <MobileLogo />
           <a onClick={toggleMenu} className="toggle-btn p-2 btn text-dark">
             <i
               className="fas fa-bars side-menu-opener"
