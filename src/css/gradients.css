@@ -3,7 +3,8 @@
     position: fixed;
     top:0%;
     border-radius: 50%;
-    background:linear-gradient(-260deg, var(--brand-primary) 20%, var(--brand-secondary) 100%);
+    /* background:linear-gradient(-260deg, var(--brand-primary) 20%, var(--brand-tertiary) 100%); */
+    background:linear-gradient(-260deg, rgb(230, 96, 6) 45%, var(--brand-primary) 100%);
     filter:blur(50px);
     animation-name:animate_rotate;
     animation-timing-function: linear;

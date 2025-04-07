@@ -1,0 +1,44 @@
+.HeroContainer {
+    max-height: fit-content;
+}
+.HeroContainer h2 {
+    line-height: 1.4;
+}
+.HeroContainer h5 {
+    line-height: 1.4;
+}
+.HeroContainer button {
+    /* background:linear-gradient(to right, var(--brand-primary) 20%, var(--brand-secondary) 70%); */
+    border:2px solid rgb(0, 0, 0);
+}
+.HeroContainer button a {
+    color:var(--brand-secondary );
+}
+
+/* .HeroContainer button a {
+    color:var(--btn-text);
+}
+
+.HeroContainer button:hover a {
+    color:var(--btn-text);
+} */
+.HeroContainer button:hover {
+    border:2px solid rgba(0, 0, 0, 0.505);
+    /* background:linear-gradient(to left, var(--brand-primary) 20%, var(--brand-secondary) 70%); */
+}
+
+.HeroContainer .link-bg {
+    margin:10px;
+    padding:2px;
+background:linear-gradient(to right, var(--brand-primary) 20%, var(--brand-secondary) 100%);
+    border-radius: 8px;
+    transition: all 250ms linear;
+}
+.HeroContainer .link-bg:hover {
+    background:linear-gradient(to left, var(--brand-secondary) 20%, var(--brand-primary) 100%);
+    box-shadow: 5px 5px 10px var(--brand-primary);
+    transition: all 250ms linear;
+}
+.HeroContainer .link-bg a {
+    background:white;
+}

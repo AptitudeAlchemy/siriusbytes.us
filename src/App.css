@@ -1,7 +1,9 @@
 @import './css/gradients.css';
+@import './css/media_query.css';
 
 * {
     font-family: "BrunoAceScRegular";
+    /* font-family: "sans-serif"; */
     margin:0;padding:0;
 }
 

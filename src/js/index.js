@@ -28,3 +28,4 @@ window.onscroll = (e) => {
   if (isToggled) changeToggleIcon();
   isToggled = false;
 };
+

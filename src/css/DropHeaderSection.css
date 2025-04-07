@@ -1,0 +1,11 @@
+.DropHeaderSection {
+    display: none;
+    position: absolute;
+    height:0;
+    top:0;
+    padding-top:5rem !important;
+    min-height:25vh;
+    background: var(--white-glass);
+    animation-name:drop-menu;
+    animation-duration: 1s;    
+}

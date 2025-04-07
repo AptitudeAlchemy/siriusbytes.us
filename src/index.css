@@ -1,5 +1,5 @@
 :root {
-  font-family: "BrunoAceSCRegular";
+  /* font-family: "BrunoAceSCRegular"; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,7 +18,7 @@
 
   /* Theming */
   /* --brand-primary:#2BACE2; */
-  --brand-primary:#0b1bcca1;
+  --brand-primary:#7e05ef;
   /* --brand-secondary:#2E76BC; */
   --brand-secondary:#8f04cb;
   --brand-tertiary:#3582C2;
@@ -28,7 +28,8 @@
   --text-color:#000000;
   --btn-text:white;
   --bg-color:#FFFFFF;
-  --white-glass:rgba(255, 255, 255, 0.200);
+  /* --white-glass:rgba(255, 255, 255, 0.566); */
+  --white-glass:rgba(255, 255, 255, 0.751);
 
   --on-link:var(--brand-secondary);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import brandLogo from "../assets/brand-with-tagline.png";
+import brandLogo from "../assets/brand-with-tagline-x.png";
 
 function MobileHeader() {
   const styles = {
@@ -7,6 +7,7 @@ function MobileHeader() {
       position: "fixed",
       top: "0",
       left: "0",
+      background: "var(--white-glass)",
     },
   };
 
@@ -20,12 +21,12 @@ function MobileHeader() {
             className="brand-logo img-fluid"
             width={128}
           />
-          <button onClick={toggleMenu} className="toggle-btn btn text-light">
+          <a onClick={toggleMenu} className="toggle-btn p-2 btn text-dark">
             <i
               className="fas fa-bars side-menu-opener"
               style={{ fontSize: "1.5rem" }}
             ></i>
-          </button>
+          </a>
         </div>
       </header>
     </>
