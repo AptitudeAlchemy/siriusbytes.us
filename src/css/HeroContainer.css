@@ -27,18 +27,19 @@
     /* background:linear-gradient(to left, var(--brand-primary) 20%, var(--brand-secondary) 70%); */
 }
 
-.HeroContainer .link-bg {
+/* .HeroContainer .link-bg {
+    width:fit-content;
     margin:10px;
     padding:2px;
 background:linear-gradient(to right, var(--brand-primary) 20%, var(--brand-secondary) 100%);
     border-radius: 8px;
     transition: all 250ms linear;
-}
-.HeroContainer .link-bg:hover {
+} */
+/* .HeroContainer .link-bg:hover {
     background:linear-gradient(to left, var(--brand-secondary) 20%, var(--brand-primary) 100%);
     box-shadow: 5px 5px 10px var(--brand-primary);
     transition: all 250ms linear;
-}
+} */
 .HeroContainer .link-bg a {
     background:white;
 }

@@ -9,6 +9,7 @@ function MobileHeader() {
       top: "0",
       left: "0",
       background: "var(--white-glass)",
+      zIndex: 1000,
     },
   };
 
@@ -17,7 +18,7 @@ function MobileHeader() {
       <header className="container-fluid" style={styles.header}>
         <div className="container p-4 px-4 d-flex justify-content-between align-items-center">
           <MobileLogo />
-          <a onClick={toggleMenu} className="toggle-btn p-2 btn text-dark">
+          <a onClick={toggleMenu} className="toggle-btn p-2 text-dark">
             <i
               className="fas fa-bars side-menu-opener"
               style={{ fontSize: "1.5rem" }}
@@ -52,11 +53,12 @@ function changeToggleIcon() {
   }
 }
 
-window.onscroll = (e) => {
-  const sidemenu = document.querySelector(".SideMenu");
-  sidemenu.style.display = "none";
-  if (isToggled) changeToggleIcon();
-  isToggled = false;
-};
-
+if (screen.width < 1080) {
+  window.onscroll = (e) => {
+    const sidemenu = document.querySelector(".SideMenu");
+    sidemenu.style.display = "none";
+    if (isToggled) changeToggleIcon();
+    isToggled = false;
+  };
+}
 export default MobileHeader;

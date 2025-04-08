@@ -29,17 +29,17 @@ function SideMenu() {
   ];
 
   return (
-    <div className="SideMenu px-4 bg-light" style={{ paddingTop: "1.5rem" }}>
+    <div className="SideMenu px-4 bg-light pt-5">
       <div className="d-flex justify-content-center align-items-start flex-column">
-        <div className="d-flex justify-content-center align-items-center">
+        {/* <div className="d-flex justify-content-center align-items-center">
           <img
             src={brandIcon}
             alt=""
             className="me-4 brand-logo img-fluid"
             width={48}
           />
-          <MobileLogo />
-        </div>
+        <MobileLogo />
+        </div> */}
         <Nav navLinks={navLinks} />
         <span
           className="text-lowercase align-self-center"

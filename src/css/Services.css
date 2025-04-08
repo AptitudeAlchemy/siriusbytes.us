@@ -1,0 +1,27 @@
+
+.Services .border-heading {
+    border-radius: 20px;
+    background-image:linear-gradient(to right, var(--brand-primary) 20%, var(--primary-shade));
+}
+
+.Services h1 {
+    border-bottom:2px solid var(--brand-primary);
+}
+
+.Services .ServiceCard {
+    width:100%;
+    height:100%;
+    min-height:320px;
+    min-width:320px;
+    overflow: hidden;
+    transition: all 250ms linear;
+}
+
+.Services .ServiceCard:hover {
+    transition: all 250ms linear;
+    box-shadow: 4px 4px 15px #1f1f1f60;
+}
+
+.Services .ServiceCard p {
+    text-align: left;
+}

@@ -1,8 +1,3 @@
-.Header {
-    /* position: fixed;
-    top:0; */
-    background:var(--white-glass);
-}
 
 button:hover {
     color:rgb(212, 212, 212) !important;
@@ -43,19 +38,19 @@ nav > a:hover {
     /* background:var(--white-glass); */
     background:rgba(255, 255, 255, 0.951);
 }
-li {transition: 250ms linear;}
-li:hover {
+.Header li {transition: 250ms linear;}
+.Header  li:hover {
     /* cursor: pointer; */
     background:var(--brand-primary);
     transition: 250ms linear;
 }
-li a {
+.Header  li a {
     width:100%;
 }
-li:hover a {
+.Header  li:hover a {
         color:white !important;
 }
-a:hover {
+.Header  a:hover {
 
     cursor: default;
 }
