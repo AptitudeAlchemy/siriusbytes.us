@@ -3,8 +3,13 @@ button:hover {
     color:rgb(212, 212, 212) !important;
 }
 
-nav > a:hover {
+nav > a {
     color:var(--brand-primary) !important;
+}
+
+nav > a:hover {
+    cursor: pointer !important;
+    color:rgb(0, 0, 0) !important;
 }
 
 @keyframes drop-menu {

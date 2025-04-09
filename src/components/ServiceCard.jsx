@@ -1,5 +1,4 @@
 import React from "react";
-import template from "../assets/images/web-dev.png";
 import AngleRightButton from "./AngleRightButton";
 
 function ServiceCard({ card }) {
@@ -29,7 +28,7 @@ function ServiceCard({ card }) {
         </div>
 
         <img
-          src={`/siriusbytes.us/src/assets/images/${card.image}`}
+          src={`/siriusbytes.us/${card.image}`}
           alt=""
           className="py-5 mx-auto"
           // width={150}

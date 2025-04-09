@@ -7,7 +7,7 @@ function Nav({ navLinks }) {
         <a
           key={link._id}
           href={`#${link.route}`}
-          className="mx-4 text-secondary"
+          className="mx-4"
           style={{ fontSize: "0.9em" }}
         >
           {link.title}
