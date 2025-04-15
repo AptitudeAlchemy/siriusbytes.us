@@ -1,5 +1,5 @@
 import React from "react";
-import AngleRightButton from "./AngleRightButton";
+import Button from "./Button";
 
 function ServiceCard({ card }) {
   const clientWidth = screen.width;
@@ -14,7 +14,7 @@ function ServiceCard({ card }) {
         }`}
         style={{ backgroundColor: "var(--white-glass)" }}
       >
-        <div className="badge w-100 text-end">
+        <div className="badge w-100 text-end f-poppins-medium">
           <span
             className={`tag p-2 bg-${bgColor}`}
             style={{
@@ -28,7 +28,7 @@ function ServiceCard({ card }) {
         </div>
 
         <img
-          src={`/siriusbytes.us/${card.image}`}
+          src={`/siriusbytes.us/${card.image}.webp`}
           alt=""
           className="py-5 mx-auto"
           // width={150}
@@ -39,7 +39,7 @@ function ServiceCard({ card }) {
           <span className="highlight" style={{ color: "var(--brand-primary)" }}>
             {card.highlight}
           </span>
-          &nbsp;
+          &nbsp;<br></br>
           {card.title}
         </h4>
         <p
@@ -52,7 +52,7 @@ function ServiceCard({ card }) {
           {card.description}
         </p>
 
-        <AngleRightButton title={"Build"} route={""}></AngleRightButton>
+        <Button title={"Build"} route={""} icon={"angle-right"}></Button>
       </li>
     </>
   );

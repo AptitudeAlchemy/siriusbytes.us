@@ -1,3 +1,4 @@
+@import url('/src/css/fonts.css');
 :root {
   /* font-family: "BrunoAceSCRegular"; */
   line-height: 1.5;
@@ -30,6 +31,7 @@
   --bg-color:#FFFFFF;
   /* --white-glass:rgba(255, 255, 255, 0.566); */
   --white-glass:rgba(255, 255, 255, 0.751);
+  --black-glass:rgba(0, 0, 0, 0.751);
 
   --on-link:var(--brand-secondary);
 }
@@ -40,8 +42,14 @@ body {
   overflow-x:hidden;
 }
 
-@font-face {
-  font-family: "BrunoAceSCRegular";
-  src: local("BrunoAceSCRegular"), url('./fonts/BrunoAceSCRegular.ttf'), format("opentype");
-  font-weight: normal;
+@media (prefers-color-scheme: dark) {
+  body {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 0, 0) !important;
+  }
+
+  .Header, .SideMenu, .HeroContainer {
+    color:white !important;
+    background-color:var(--black-glass) !important;
+  }
 }

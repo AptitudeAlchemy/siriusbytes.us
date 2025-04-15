@@ -1,12 +1,12 @@
 import React from "react";
 import heroImage from "../assets/svgs/hero.svg";
 import "../css/HeroContainer.css";
-import AngleRightButton from "./AngleRightButton";
+import Button from "./Button";
 
 function HeroContainer() {
   return (
-    <div
-      className="HeroContainer container-fluid px-3 d-flex justify-content-center h-100"
+    <section
+      className="HeroContainer container-fluid px-3 d-flex justify-content-center h-100 f-brand"
       style={{
         // background: "var(--white-glass)",
         minHeight: "calc(100vh - 30vh)",
@@ -15,7 +15,7 @@ function HeroContainer() {
       <div className="container pt-5 w-100 ">
         <div className="row w-100 mx-0">
           <div
-            className={`w-100 col pt-5 d-flex justify-content-center align-items-${
+            className={`col pt-5 d-flex justify-content-center align-items-${
               screen.width < 1080 ? "center" : "start"
             } flex-column`}
           >
@@ -30,26 +30,29 @@ function HeroContainer() {
                 in an ever-evolving digital world.
               </h5>
             </div>
-            <AngleRightButton
+
+            <Button
               title={"contact me"}
               route={"contact-me"}
-            ></AngleRightButton>
-            {/* <div className="row w-100 d-flex justify-content-between align-items-center">
-              <div className="col w-100">
-                
-              </div>
-            </div> */}
+              icon={"phone"}
+            ></Button>
+            <span className="text-secondary f-small">
+              Are you a student looking for affordable projects?&nbsp;
+              <a href="#" className="link">
+                see here.
+              </a>
+            </span>
           </div>
           <img
             src={heroImage}
             alt=""
-            className={`col-sm img-fluid ${
-              screen.width < 1080 ? "mt-5" : "mt-0"
+            className={`w-50 col img-fluid ${
+              screen.width < 1080 ? "mt-5 pb-5" : "mt-0"
             }`}
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

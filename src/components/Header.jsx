@@ -1,7 +1,4 @@
 import React from "react";
-import brandLogo from "/favicon.png";
-import brandTagline from "../assets/brand-with-tagline-x.png";
-import DropHeaderSection from "./DropHeaderSection";
 
 import "../css/Header.css";
 import Nav from "./Nav";
@@ -12,8 +9,8 @@ function Header() {
   const navLinks = [
     {
       _id: 0,
-      title: "our services",
-      route: "our-services",
+      title: "services",
+      route: "services",
     },
     {
       _id: 1,
@@ -33,7 +30,7 @@ function Header() {
   ];
   return (
     <>
-      <header className="Header container-fluid px-0 mx-0 w-100 h-100 py-3 d-flex justify-content-start align-items-start">
+      <header className="Header container-fluid px-0 mx-0 w-100 h-100 py-3 d-flex justify-content-start align-items-start f-brand">
         <div className="container d-flex justify-content-between align-items-center">
           <Logo />
 

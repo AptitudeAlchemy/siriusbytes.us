@@ -1,5 +1,4 @@
 import React from "react";
-import brandLogo from "../assets/brand-with-tagline-x.png";
 import MobileLogo from "./MobileLogo";
 
 function MobileHeader() {

@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: "BrunoAceSCRegular";
+  src: local("BrunoAceSCRegular"), url('../fonts/BrunoAceSCRegular.ttf'), format("opentype");
+  font-weight: normal;
+}
+
+
+/* Poppins */
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"), url('../fonts/poppins/Poppins-Regular.ttf'), format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium"), url('../fonts/poppins/Poppins-Medium.ttf'), format("opentype");
+}
+
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: local("Poppins-SemiBold"), url('../fonts/poppins/Poppins-SemiBold.ttf'), format("opentype"); 
+} 
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins-Bold"), url('../fonts/poppins/Poppins-Bold.ttf'), format("opentype");
+}
+
+/* Roboto */
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"), url('../fonts/roboto/Roboto-Medium.ttf'), format("opentype"); 
+} 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"), url('../fonts/roboto/Roboto-Regular.ttf'), format("opentype"); 
+}
+@font-face {
+  font-family: "Roboto-SemiBold";
+  src: local("Roboto-SemiBold"), url('../fonts/roboto/Roboto-SemiBold.ttf'), format("opentype"); 
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"), url('../fonts/roboto/Roboto-Bold.ttf'), format("opentype"); 
+}
+
+h5 {
+    font-family: 'poppins-medium';
+}
+
+.f-brand {
+  font-family: 'BrunoAceSCRegular';
+}
+
+.f-small {
+    font-family: 'poppins-regular';
+    font-size:1rem;
+}
+
+.f-poppins-medium {
+  font-family: 'poppins-regular';
+}
+
+.f-roboto-medium {
+    font-size:1.2rem;
+    font-family: 'roboto-medium';
+}
+
+button {
+  font-family: 'Poppins';
+}

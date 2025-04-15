@@ -8,4 +8,28 @@
         font-size:1rem;
         text-align: center;
     }
+
+    .NewsLetter {
+        justify-content: center !important;
+    }
+
+    footer .branding {
+        justify-content: center !important;
+    }
+
+    footer  ul.contact-us {
+        margin-top:2rem;
+    }
+
+    footer .social-links {
+        text-align:center !important;
+    }
+
 }
+
+@media screen and (max-width:392px) {
+    .NewsLetter button {
+        margin-top:1.2rem;
+    }
+}
+

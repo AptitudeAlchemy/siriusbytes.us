@@ -1,15 +1,14 @@
 import React from "react";
 import "../css/SideMenu.css";
 import Nav from "./MobileNav";
-import brandIcon from "/favicon.png";
 import MobileLogo from "./MobileLogo";
 
 function SideMenu() {
   const navLinks = [
     {
       _id: 0,
-      title: "our services",
-      route: "our-services",
+      title: "services",
+      route: "services",
     },
     {
       _id: 1,
@@ -42,10 +41,11 @@ function SideMenu() {
         </div> */}
         <Nav navLinks={navLinks} />
         <span
-          className="text-lowercase align-self-center"
-          style={{ fontSize: "14px" }}
+          className="text-uppercase align-self-center"
+          style={{ fontSize: "14px", fontFamily: "poppins-regular" }}
         >
-          Made by Madhan M with <i className="fas fa-heart text-danger"></i>
+          Made by <span style={{fontFamily:'poppins-semibold'}}>Madhan</span> with{" "}
+          <i className="fas fa-heart text-danger"></i>
         </span>
       </div>
     </div>
