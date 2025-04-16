@@ -54,7 +54,13 @@ function Footer() {
     >
       <section className="container w-100 h-100 bg-transparent py-5">
         <div className="branding d-flex justify-content-between align-items-start flex-wrap">
-          <Logo></Logo>
+          <div className="logo">
+            <Logo></Logo>
+            <h6 className="h6 fw-regular text-dark f-small my-4">
+              &quot;Let your dreams take flight with purpose, <br></br> At
+              Sirius, we shape visions into reality.&quot;
+            </h6>
+          </div>
           <ul className="contact-us">
             <h6
               className="h6 f-regular fw-bold text-uppercase pb-2"
@@ -87,7 +93,10 @@ function Footer() {
         <div className="my-1 social-links">
           <h2 className="mx-2 h6 f-poppins-regular">Follow Us On</h2>
           {socialMediaLinks.map((item) => (
-            <button className="btn text-secondary m-2 p-2 px-3 rounded border-0 outline-0">
+            <button
+              key={item._id}
+              className="btn text-secondary m-2 p-2 px-3 rounded border-0 outline-0"
+            >
               <a
                 href={`https://www.${item.link}`}
                 className="h4"
@@ -103,13 +112,11 @@ function Footer() {
 
       {screen.width >= 1080 ? (
         <section
-          className="container f-small"
+          className="container pt-4 f-small d-flex justify-content-between align-items-center"
           style={{ borderTop: "1px solid #0c0c0c20" }}
         >
-          <h6
-            className="h6 pt-4 text-center"
-            style={{ fontFamily: "poppins-regular" }}
-          >
+          {/* <h5 className="h6 fw-regular">&copy; All rights reserved 2025.</h5> */}
+          <h6 className="h6" style={{ fontFamily: "poppins-regular" }}>
             Made By{" "}
             <span
               className="author-name"
@@ -119,6 +126,28 @@ function Footer() {
             </span>{" "}
             with <i className="fas fa-heart text-danger"></i>
           </h6>
+
+          <ul className="m-0 p-0 d-flex justify-content-center align-items-center">
+            <li className="mx-2" style={{ fontSize: "14px" }}>
+              <a href="#" className="link fw-bold text-secondary">
+                Terms & conditions
+              </a>
+            </li>
+            <span
+              className="mx-1"
+              style={{
+                width: "5px",
+                height: "5px",
+                // borderRadius: "50px",
+                background: "var(--brand-primary)",
+              }}
+            ></span>
+            <li className="ms-2" style={{ fontSize: "14px" }}>
+              <a href="#" className="link fw-bold text-secondary">
+                Privacy policy
+              </a>
+            </li>
+          </ul>
         </section>
       ) : (
         <></>
