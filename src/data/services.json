@@ -1,0 +1,51 @@
+[
+    {
+      "_id": 0,
+      "highlight": "Web",
+      "title": "application development",
+      "image": "web-dev",
+      "isAvaliable": true
+    },
+    {
+      "_id": 1,
+      "highlight": "Desktop",
+      "title": "app development",
+      "image": "desktop-dev",
+      "isAvaliable": false
+    },
+    {
+      "_id": 2,
+      "highlight": "Android",
+      "title": "app development",
+      "image": "android-dev",
+      "isAvaliable": false
+    },
+    {
+      "_id": 3,
+      "highlight": "SpringBoot",
+      "title": "app development",
+      "image": "spring-boot-dev",
+      "isAvaliable": true
+    },
+    {
+      "_id": 4,
+      "highlight": "ReactJs",
+      "title": "application development",
+      "image": "react-dev",
+      "isAvaliable": true
+    },
+    {
+      "_id": 5,
+      "highlight": "NodeJs",
+      "title": "backend development",
+      "image": "nodejs-dev",
+      "isAvaliable": true
+    },
+    {
+      "_id": 6,
+      "highlight": "Python",
+      "title": "backend development",
+      "image": "python-dev",
+      "isAvaliable": true
+    }
+  ]

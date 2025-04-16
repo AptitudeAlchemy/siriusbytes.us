@@ -9,16 +9,23 @@
         text-align: center;
     }
 
+    .HeroContainer span {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
     .NewsLetter {
         justify-content: center !important;
     }
 
-    footer .branding {
-        justify-content: center !important;
-    }
-
     footer  ul.contact-us {
+        margin:0;
+        padding:0;
+        text-align:center;
         margin-top:2rem;
+        li {
+            text-align:left;
+        }
     }
 
     footer .social-links {

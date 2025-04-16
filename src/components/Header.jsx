@@ -19,8 +19,8 @@ function Header() {
     },
     {
       _id: 2,
-      title: "contact me",
-      route: "contact-me",
+      title: "contact us",
+      route: "contact-us",
     },
     {
       _id: 4,

@@ -6,6 +6,7 @@ import HeroContainer from "../components/HeroContainer";
 import ScrollDown from "../components/ScrollDown";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+import Faqs from "../components/Faqs";
 
 function HomePage() {
   const screenWidth = window.screen.width;
@@ -22,6 +23,7 @@ function HomePage() {
           <HeroContainer></HeroContainer>
           {screenWidth >= 1080 ? <ScrollDown></ScrollDown> : <></>}
           <Services></Services>
+          <Faqs></Faqs>
           <Footer></Footer>
         </div>
       </section>

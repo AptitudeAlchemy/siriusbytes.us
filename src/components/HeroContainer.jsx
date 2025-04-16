@@ -14,34 +14,31 @@ function HeroContainer() {
     >
       <div className="container pt-5 w-100 ">
         <div className="row w-100 mx-0">
-          <div
-            className={`col pt-5 d-flex justify-content-center align-items-${
-              screen.width < 1080 ? "center" : "start"
-            } flex-column`}
-          >
-            <div className="hero-description">
+          <div className="hero-description-column col pt-5 ">
+            <div className="hero-description d-grid place-items-center">
               <h2 className="h2 fw-bold text-uppercase">
                 Innovating at the Speed of Light{" "}
                 <i className="fas fa-rocket"></i>
               </h2>
-              <h5 className="h5 my-5">
-                At SiriusBytes, I build future-forward tech solutions that
-                empower businesses to scale smarter, move faster, and stay ahead
-                in an ever-evolving digital world.
+              <h5 className="h5 my-5 f-poppins-semibold">
+                At <strong>Sirius Bytes</strong>, We build future-forward tech
+                solutions that empower businesses to scale smarter, move faster,
+                and stay ahead in an ever-evolving digital world.
               </h5>
-            </div>
 
-            <Button
-              title={"contact me"}
-              route={"contact-me"}
-              icon={"phone"}
-            ></Button>
-            <span className="text-secondary f-small">
-              Are you a student looking for affordable projects?&nbsp;
-              <a href="#" className="link">
-                see here.
-              </a>
-            </span>
+              <Button
+                title={"contact us"}
+                route={"contact-us"}
+                icon={"phone"}
+              ></Button>
+              <br />
+              <span className="text-secondary f-small">
+                Are you a student looking for affordable projects?&nbsp;
+                <a href="#" className="link">
+                  see here.
+                </a>
+              </span>
+            </div>
           </div>
           <img
             src={heroImage}

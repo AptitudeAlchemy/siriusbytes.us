@@ -24,7 +24,7 @@ function NewsLetter() {
         </h2>
         <form
           action=""
-          className="w-20 form p-2 d-flex justify-content-center align-items-center flex-wrap"
+          className="w-20 form p-0 d-flex justify-content-center align-items-center flex-wrap"
         >
           <div className="input bg-transparent" style={styles.formField}>
             <i
@@ -42,7 +42,7 @@ function NewsLetter() {
             />
           </div>
           <button
-            className="w-20 mx-2 submit border-0 px-4 py-2 fw-bold text-light"
+            className="w-20 ms-2 submit border-0 px-4 py-2 fw-bold text-light"
             style={{
               backgroundColor: "var(--brand-primary)",
               fontFamily: "poppins-regular",

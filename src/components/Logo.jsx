@@ -5,10 +5,8 @@ import "../css/Logo.css";
 
 function Logo() {
   const isDarkTheme = window.matchMedia("prefers-color-scheme:dark");
-  console.log(isDarkTheme);
-
   return (
-    <div className="d-flex justify-content-start align-items-center">
+    <div className="w-auto">
       {/* <img src={brandLogo} alt="" className="img-fluid brand-logo" /> */}
       <img
         src={isDarkTheme ? brandTagBlack : brandTagWhite}

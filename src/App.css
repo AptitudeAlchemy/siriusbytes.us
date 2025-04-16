@@ -21,9 +21,6 @@ a:hover {
     padding:0;
 }
 
-li {
-    list-style: none;
-}
 a.button-link {
     font-family: 'roboto-medium';
     border:2px solid transparent;

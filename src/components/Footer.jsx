@@ -55,13 +55,20 @@ function Footer() {
       <section className="container w-100 h-100 bg-transparent py-5">
         <div className="branding d-flex justify-content-between align-items-start flex-wrap">
           <div className="logo">
-            <Logo></Logo>
-            <h6 className="h6 fw-regular text-dark f-small my-4">
+            {/* <Logo></Logo> */}
+            <h6
+              className="h5 fw-regular text-dark my-4"
+              style={{ fontFamily: "poppins-semibold" }}
+            >
               &quot;Let your dreams take flight with purpose, <br></br> At
               Sirius, we shape visions into reality.&quot;
             </h6>
           </div>
-          <ul className="contact-us">
+          <ul
+            className="contact-us"
+            style={{ listStyle: "none" }}
+            id="contact-us"
+          >
             <h6
               className="h6 f-regular fw-bold text-uppercase pb-2"
               style={{ borderBottom: "2px solid var(--brand-primary)" }}
@@ -127,7 +134,10 @@ function Footer() {
             with <i className="fas fa-heart text-danger"></i>
           </h6>
 
-          <ul className="m-0 p-0 d-flex justify-content-center align-items-center">
+          <ul
+            className="m-0 p-0 d-flex justify-content-center align-items-center"
+            style={{ listStyle: "none" }}
+          >
             <li className="mx-2" style={{ fontSize: "14px" }}>
               <a href="#" className="link fw-bold text-secondary">
                 Terms & conditions
