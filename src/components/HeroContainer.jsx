@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../assets/svgs/hero.svg";
+import heroImage from "../assets/svgs/hero.webp";
 import "../css/HeroContainer.css";
 import Button from "./Button";
 
@@ -27,12 +27,13 @@ function HeroContainer() {
               </h5>
 
               <Button
-                title={"contact us"}
-                route={"contact-us"}
-                icon={"phone"}
+                _id={0}
+                title={"get started"}
+                route={"get-started"}
+                icon={"rocket"}
               ></Button>
               <br />
-              <span className="text-secondary f-small">
+              <span className="text-dark f-small">
                 Are you a student looking for affordable projects?&nbsp;
                 <a href="#" className="link">
                   see here.

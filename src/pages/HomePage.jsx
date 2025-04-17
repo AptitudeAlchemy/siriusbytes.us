@@ -15,16 +15,13 @@ function HomePage() {
     <>
       <section
         className="container-fluid w-auto m-0 p-0"
-        style={{ overflowX: "hidden", background: "var(--white-glass)" }}
+        style={{ overflowX: "hidden" }}
       >
         <div className="container-fluid">
-          {screenWidth >= 1080 ? <Header /> : <MobileHeader />}
-          {screenWidth < 1080 ? <SideMenu /> : <></>}
           <HeroContainer></HeroContainer>
           {screenWidth >= 1080 ? <ScrollDown></ScrollDown> : <></>}
           <Services></Services>
           <Faqs></Faqs>
-          <Footer></Footer>
         </div>
       </section>
     </>

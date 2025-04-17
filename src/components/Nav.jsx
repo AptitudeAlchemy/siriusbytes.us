@@ -6,7 +6,7 @@ function Nav({ navLinks }) {
       {navLinks.map((link) => (
         <a
           key={link._id}
-          href={`#${link.route}`}
+          href={`${link.route}`}
           className="mx-4"
           style={{ fontSize: "0.9em" }}
         >

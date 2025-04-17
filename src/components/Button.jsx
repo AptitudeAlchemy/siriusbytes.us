@@ -1,10 +1,10 @@
 import React from "react";
 
-function Button({ title, route, icon }) {
+function Button({_id, title, route, icon }) {
   return (
     <>
-      <a
-        href={`#${route}`}
+      <a data-id={_id}
+        href={route}
         className="link button-link my-2 btn text-light text-uppercase"
         style={{
           backgroundColor: "var(--brand-primary)",

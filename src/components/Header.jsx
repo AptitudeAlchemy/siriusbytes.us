@@ -6,11 +6,13 @@ import TopSearchBar from "./TopSearchBar";
 import Logo from "./Logo";
 
 function Header() {
+  const currentRoute = location.pathname;
+
   const navLinks = [
     {
       _id: 0,
-      title: "services",
-      route: "services",
+      title: "home",
+      route: "/",
     },
     {
       _id: 1,
@@ -19,13 +21,13 @@ function Header() {
     },
     {
       _id: 2,
-      title: "contact us",
-      route: "contact-us",
+      title: "services",
+      route: currentRoute.split("/")[2] == "" ? "#services" : "services",
     },
     {
       _id: 4,
-      title: "terms & conditions",
-      route: "terms-and-conditions",
+      title: "contact us",
+      route: "#contact-us",
     },
   ];
   return (

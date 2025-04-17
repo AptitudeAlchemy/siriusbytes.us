@@ -1,4 +1,8 @@
 
+.Header {
+    background-color: var(--white-glass);
+}
+
 button:hover {
     color:rgb(212, 212, 212) !important;
 }

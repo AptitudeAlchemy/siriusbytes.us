@@ -1,18 +1,28 @@
+import { Outlet } from "react-router-dom";
+
 import "./App.css";
-import './js/index';
-import HomePage from "./pages/HomePage";
-
-
+import "./js/index";
+import Header from "./components/Header";
+import SideMenu from "./components/SideMenu";
+import MobileHeader from "./components/MobileHeader";
+import Footer from "./components/Footer";
 function App() {
+  const screenWidth = screen.width;
+
   return (
-    <div>
+    <>
       <span className="particle-grad-sm-r particle-grad"></span>
       <span
         className="particle-grad-rg-l particle-grad"
         // style={{ top: "25%" }}
       ></span>
-      <HomePage />
-    </div>
+      {screenWidth >= 1080 ? <Header /> : <MobileHeader />}
+      {screenWidth < 1080 ? <SideMenu /> : <></>}
+      <div style={{ backgroundColor: "var(--white-glass)" }}>
+        <Outlet></Outlet>
+      </div>
+      <Footer></Footer>
+    </>
   );
 }
 

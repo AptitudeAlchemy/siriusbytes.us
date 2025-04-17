@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import faqs from "../data/faqs";
 
 function Faqs() {
@@ -18,7 +18,7 @@ function Faqs() {
           <li
             key={index}
             className="mb-2 px-0 border"
-            style={{ background: "white", listStyle: "none" }}
+            style={{ background: "var(--white-glass)", listStyle: "none" }}
           >
             <details className="p-4 m-0 w-100 d-flex justify-content-start align-items-start flex-column">
               <>
@@ -28,9 +28,9 @@ function Faqs() {
                 </summary>
               </>
               <p
-                className="content px-4 h6 text-secondary f-poppins-medium text-wrap"
+                className="content  px-0 h6 text-dark f-poppins-medium text-wrap"
                 style={{
-                  background: "white",
+                  // background: "white",
                   textAlign: "left",
                   minHeight: "5vh",
                 }}

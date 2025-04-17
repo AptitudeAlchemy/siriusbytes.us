@@ -52,7 +52,12 @@ function ServiceCard({ card }) {
           {card.description}
         </p>
 
-        <Button title={"Build"} route={""} icon={"angle-right"}></Button>
+        <Button
+          _id={card._id}
+          title={"Build"}
+          route={`services/${card.highlight + card.title}/build`}
+          icon={"angle-right"}
+        ></Button>
       </li>
     </>
   );
