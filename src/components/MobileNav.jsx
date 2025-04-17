@@ -8,11 +8,9 @@ function Nav({ navLinks }) {
       <ul className="p-0 w-100">
         {navLinks.map((link) => (
           <li key={link._id} className="w-100 p-2 bg-transparent mt-2">
-            <Link
-              to={link.route}
-              title={link.title}
-              className="text-dark"
-            ></Link>
+            <Link to={link.route} className="text-dark">
+              {link.title}
+            </Link>
           </li>
         ))}
       </ul>
