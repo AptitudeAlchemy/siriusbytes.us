@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import MobileLogo from "./MobileLogo";
 
+import { appContext } from "../AppContext";
+
 function MobileHeader() {
+  const context = useContext(appContext);
+
   const styles = {
     header: {
       position: "fixed",
@@ -17,9 +21,14 @@ function MobileHeader() {
       <header className="container-fluid" style={styles.header}>
         <div className="container p-4 px-4 d-flex justify-content-between align-items-center">
           <MobileLogo />
-          <a onClick={toggleMenu} className="toggle-btn p-2 text-dark">
+          <a
+            className="toggle-btn p-2 text-dark"
+            onClick={context.setIsExpanded}
+          >
             <i
-              className="fas fa-bars side-menu-opener"
+              className={`fas fa-${
+                context.isExpanded ? "xmark" : "bars"
+              } side-menu-opener`}
               style={{ fontSize: "1.5rem" }}
             ></i>
           </a>
@@ -29,35 +38,10 @@ function MobileHeader() {
   );
 }
 
-let isToggled = false;
-
-function toggleMenu() {
+function toggleSideMenu(sideMenuState) {
   const sidemenu = document.querySelector(".SideMenu");
-  if (!isToggled) {
-    sidemenu.style.display = "block";
-  } else sidemenu.style.display = "none";
-
-  changeToggleIcon();
-  isToggled = !isToggled;
-}
-
-function changeToggleIcon() {
-  const iconElement = document.querySelector(".side-menu-opener");
-  const classes = iconElement.classList;
-
-  if (classes.contains("fa-xmark")) {
-    classes.replace("fa-xmark", "fa-bars");
-  } else if (classes.contains("fa-bars")) {
-    classes.replace("fa-bars", "fa-xmark");
-  }
-}
-
-if (screen.width < 1080) {
-  window.onscroll = (e) => {
-    const sidemenu = document.querySelector(".SideMenu");
+  if (sideMenuState) {
     sidemenu.style.display = "none";
-    if (isToggled) changeToggleIcon();
-    isToggled = false;
-  };
+  } else sidemenu.style.display = "block";
 }
 export default MobileHeader;

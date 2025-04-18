@@ -1,9 +1,7 @@
-import React from 'react'
+import React, { useContext } from "react";
 
 function TermsAndConditions() {
-  return (
-    <div>TermsAndConditions</div>
-  )
+  return <>Terms and Conditions</>;
 }
 
-export default TermsAndConditions
+export default TermsAndConditions;

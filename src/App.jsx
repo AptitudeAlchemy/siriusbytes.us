@@ -18,7 +18,9 @@ function App() {
       ></span>
       {screenWidth >= 1080 ? <Header /> : <MobileHeader />}
       {screenWidth < 1080 ? <SideMenu /> : <></>}
-      <div style={{ backgroundColor: "var(--white-glass)" }}>
+      <div
+        style={{ backgroundColor: "var(--white-glass)", paddingTop: "7.5rem" }}
+      >
         <Outlet></Outlet>
       </div>
       <Footer></Footer>
