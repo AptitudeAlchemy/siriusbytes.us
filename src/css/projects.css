@@ -1,0 +1,9 @@
+
+.ProjectCard {
+    transition: all 250ms linear;
+    transform: scale(0.99);
+}
+.ProjectCard:hover {
+    transform: scale(1);
+    transition: all 250ms linear;
+}

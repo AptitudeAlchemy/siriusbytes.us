@@ -10,7 +10,7 @@ import ServicePage from "./pages/ServicePage.jsx";
 import AppContext from "./AppContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  // <StrictMode>
     <AppContext>
       <BrowserRouter>
         <Routes>
@@ -27,5 +27,5 @@ createRoot(document.getElementById("root")).render(
         </Routes>
       </BrowserRouter>
     </AppContext>
-  </StrictMode>
+  // </StrictMode>
 );

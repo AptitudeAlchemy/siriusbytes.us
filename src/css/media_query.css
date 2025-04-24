@@ -41,6 +41,21 @@
         padding-top:7.5rem;
     }
 
+    .ProjectSearchResult .Cards {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .ProjectSearchBanner form {
+        width: 100% !important;
+        flex-wrap: wrap;
+
+        .input-area {
+            margin:0.5rem 0;
+        }
+
+    }
+
 }
 
 @media screen and (max-width:392px) {
